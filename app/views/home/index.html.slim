@@ -1,0 +1,29 @@
+.container
+  p Year 1 - (2015 - 2016)
+  .flip.real-flip
+    .front
+      = image_tag 'https://raw.githubusercontent.com/Mrjaco12/jacobandnicoleforever/master/public/romance.jpg'
+    .back
+      p
+        | Nicole, remember when a year used to seem like such a huge amount of time? And now as adults we're ready to
+        |  relax and enjoy young adulthood and what does time do? Up and flips into fast forward mode. That's why I am
+        |  always trying to be such a "funny" guy. With the hope that my "pranks" will make time seem like it's flowing
+        |  through molasses. Even though it doesn't work all the time, you still tolerate it which is one of your great
+        |  qualities. You're just really cool. Like, so much cooler than I knew even a year ago. And you were really
+        |  cool back then. Look at us in that antique car cruising away like two of the baddest that ever did it.
+      p
+        | You know how people say that marriage is hard work? Maybe that's true. But with you it feels so easy. Too
+        |  easy. So easy that we're just gonna have to skip ahead and try out hardmode. And even though PQ is gonna
+        |  change both of us to the max. Somehow, I know that together we're gonna nail it. Metaphorically. Plus, there
+        |  is no one else I would rather being doing this with under any circumstances so even if it's a horrible
+        |  experience (it won't be) I'll still have the pure pleasure and joy of going through it with you.
+      p = 'I love you Partner. <3'
+
+- (2017..2065).each.with_index do |year, idx|
+  - anniversary = idx + 2
+  .container
+    p Year #{anniversary} - (#{year - 1} - #{year})
+    .flip
+      .front
+        = image_tag 'https://raw.githubusercontent.com/Mrjaco12/jacobandnicoleforever/master/public/missing.png'
+      .back

@@ -1,0 +1,48 @@
+{
+  "parser": "babel-eslint",
+  "extends": "eslint-config-shakacode",
+  "globals": {
+    "$": true,
+    "Rollbar": true,
+    "StripeCheckout": true,
+    "__DEBUG_SERVER_ERRORS__": true,
+    "__SERVER_ERRORS__": true,
+    "analytics": true,
+    "beforeEach": true,
+    "describe": true,
+    "equalheight": true,
+    "expect": true,
+    "it": true,
+    "jest": true,
+    "spyOn": true
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+        "jsx": true
+    }
+  },
+  "rules": {
+    "comma-dangle": [2, "never"],
+    "eol-last": [0],
+    "max-len": [0, 120],
+    "no-console": [2],
+    "no-mixed-requires": [0],
+    "no-unused-vars": [2, { "argsIgnorePattern": "^_" }],
+    "no-underscore-dangle": [0],
+    "quotes": [2, "single"],
+    "react/jsx-uses-react": 1,
+    "react/wrap-multilines": 2,
+    "semi": [2, "never"],
+    "space-before-function-paren": [2, "always"],
+    "valid-jsdoc": 2
+  },
+  "plugins": [
+    "react"
+  ]
+}
