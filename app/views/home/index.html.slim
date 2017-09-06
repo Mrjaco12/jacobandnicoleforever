@@ -18,9 +18,31 @@
         |  is no one else I would rather being doing this with under any circumstances so even if it's a horrible
         |  experience (it won't be) I'll still have the pure pleasure and joy of going through it with you.
       p = 'I love you Partner. <3'
+.container
+  p Year 2 - (2016 - 2017)
+  .flip.real-flip
+    .front
+      = image_tag 'https://raw.githubusercontent.com/Mrjaco12/jacobandnicoleforever/master/public/peyton.jpg'
+    .back
+      p
+        | Nicole, if I had been thinking of it I would have gotten a picture during the eclipse this year. I don't
+        |  know if that was the best moment of my life so far but it's definitely in the top two or three. It wouldn't
+        |  have meant nearly as much without you and our beautiful daughter there beside me. Oh yeah! Did I mention we
+        |  had a baby!?! How cool is that? I don't know what your summary is so far, but I think it's been a blast.
+        |  While I never could have prepared for all the changes in our life after PQ was born, I think I somehow
+        |  nailed the preparation by making sure that you were the one that I got to change with.
+      p
+        | And there's been so much more to this past year than just our daughter. We're gonna buy a house. A place to
+        |  live and grow, to make friends or enemies, to work out our bodies and minds, to entertain family, to develop
+        |  professional relationships and careers, to extend our growing family, to become gardeners and builders and
+        |  mechanics and designers and cooks and entertainers and landscapers and neighbors and good citizens. The list
+        |  goes on. I dream of all these things but only with you by my side to make it all possible. I couldn't do any
+        |  of it without you and I wouldn't even want to try thinking about it. I can't wait to see how can conquer the
+        |  world and more in the next year.
+      p = 'I love you Partner. <3'
 
-- (2017..2065).each.with_index do |year, idx|
-  - anniversary = idx + 2
+- (2018..2065).each do |year|
+  - anniversary = year - 2015
   .container
     p Year #{anniversary} - (#{year - 1} - #{year})
     .flip
